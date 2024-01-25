@@ -1,17 +1,15 @@
-// Write a program to print multiples of 5 ranging 1 to 100.
+//  Write a program that takes user input. Convert and show the input in capital letters.
 
 // Question # 10
 
-let num = 5;
-
 document.write(
-  " ~--------------------------------------------------- A program to print the multiples of 05 ranging from 1 to 100 in an Array ---------------------------------------------------~  "
+  "------------------------------- Write a program that takes user input. Convert and show the input in capital letters. ------------------------------- <br>"
+);
+document.write(
+  "-------------------------------------- Question # 10 -------------------------------------- <br><br>"
 );
 
-numbers = [];
+let ask_user = prompt("Enter your input = ");
 
-for (let i = 1; i <= 10; i++) {
-  numbers.push(num * i);
-}
-
-document.write("<br><br>", numbers.join(","));
+document.write("The User Input is = ", ask_user, "<br>");
+document.write("The User Input in UpperCase is = ", ask_user.toUpperCase());
