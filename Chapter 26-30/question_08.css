@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Kanit:wght@900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-image: url(https://i.ytimg.com/vi/e7g_ZUcJpe4/maxresdefault.jpg);
+  /* background-color: red; */
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.game {
+  text-align: center;
+}
+
+.game h1 {
+  font-weight: 900;
+
+  width: 86rem;
+  margin: auto;
+  background-color: black;
+  font-size: 4rem;
+  color: white;
+  /* background-color: black; */
+  border-radius: 0.5rem;
+  opacity: 0.5;
+  font-family: "Heebo", sans-serif;
+}
+
+.container .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  color: rgb(255, 255, 255);
+
+  margin: 10px auto;
+  font-weight: 900;
+  font-size: 3.4rem;
+  padding: 0.3rem 9rem;
+  color: blue;
+  font-family: "Heebo", sans-serif;
+  cursor: pointer;
+}
+
+.guessed {
+  font-size: 7rem;
+  width: 96rem;
+  border-radius: 3rem;
+  color: white;
+  font-weight: 900;
+  font-family: "Heebo", sans-serif;
+  background-color: black;
+  text-align: center;
+  padding: 0rem 6rem;
+  margin: auto;
+  display: none;
+}
