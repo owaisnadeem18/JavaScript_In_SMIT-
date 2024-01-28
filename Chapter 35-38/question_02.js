@@ -13,7 +13,7 @@ document.write(
 let func = () => {
   let ask_first = prompt("Enter Your First Name: ");
   let ask_second = prompt("Enter Your Last Name: ");
-  let full_name = ask_first.concat(ask_second);
+  let full_name = ask_first.concat(" ", ask_second);
 
   alert("Hello , Dear User !!! " + full_name);
 };
