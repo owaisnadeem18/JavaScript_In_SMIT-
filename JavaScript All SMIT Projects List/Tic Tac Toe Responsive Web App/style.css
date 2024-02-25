@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Merriweather+Sans:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(121, 121, 121);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  background-color: rgb(33, 0, 183);
+  color: rgb(0, 224, 254);
+  font-size: 2rem;
+  font-family: "Kanit", sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  font-weight: 900;
+}
+
+nav ul li {
+  font-size: 2.5rem;
+}
+nav .right {
+  font-size: 2.2rem;
+}
+
+.right span {
+  color: white;
+}
+
+.right .class-2 {
+  padding: 0 0.4rem;
+  color: rgb(234, 255, 0);
+}
+
+.game-container {
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  font-family: "Kanit", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+  position: relative;
+}
+
+.line {
+  width: 0vw;
+  height: 4px;
+  background-color: #fff;
+  transition: width 1s ease-in-out;
+  position: absolute;
+  background-color: rgb(43, 255, 0);
+}
+.box {
+  font-size: 8vw;
+  border: 4px solid black;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box:hover {
+  background-color: rgb(124, 143, 143);
+}
+
+.game-information {
+  padding: 0 5rem;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.game-information .info {
+  font-size: 3rem;
+}
+
+.img-box img {
+  width: 0;
+  transition: width 1.5s ease-in-out;
+}
+
+/* Some Utility classes inside it */
+
+.br-0 {
+  border-right: 0;
+}
+
+.bl-0 {
+  border-left: 0;
+}
+
+.bb-0 {
+  border-bottom: 0;
+}
+
+.bt-0 {
+  border-top: 0;
+}
+
+#reset {
+  margin: 40px 38px;
+  padding: 1rem 3rem;
+  font-weight: 900;
+  font-size: 2rem;
+  border-radius: 1rem;
+  background-color: rgb(255, 247, 0);
+  color: rgb(255, 0, 0);
+}
+
+@media screen and (max-width: 1575px) {
+  .right h3 {
+    font-size: 2rem;
+  }
+  .left ul li {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  nav {
+    padding: 2rem 1rem;
+    background-color: rgb(33, 0, 183);
+    color: rgb(0, 224, 254);
+    font-size: 1.4rem;
+    font-family: "Kanit", sans-serif;
+  }
+  .right h3 {
+    font-size: 2rem;
+  }
+  .left ul li {
+    font-size: 2rem;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 13vw);
+    grid-template-rows: repeat(3, 13vw);
+  }
+  .game-information .info {
+    font-size: 3rem;
+    width: 100%;
+    padding: 15px 0;
+    display: block;
+    color: rgb(251, 255, 0);
+    /* color: rgb(0, 255, 0); */
+  }
+  .game-information h1 {
+    font-size: 2.34rem;
+  }
+
+  #reset {
+    font-size: 2rem;
+    border: 1px solid white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 13px auto;
+    padding: 0.5rem 4rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .game-container {
+    flex-wrap: wrap;
+  }
+
+  nav {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    text-align: center;
+  }
+  nav .right h3 {
+    font-size: 1.6rem;
+  }
+  nav .left ul li {
+    font-size: 1.9rem;
+  }
+
+  .game-information {
+    padding: 2rem 0;
+    width: 100%;
+  }
+  .game-information h1 {
+    text-align: center;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #reset {
+    font-size: 2rem;
+    border: 1px solid white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 13px auto;
+    padding: 1rem 3rem;
+  }
+  .game-information .info {
+    font-size: 1.7rem;
+    width: 100%;
+    padding: 10px 0;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    color: rgb(251, 255, 0);
+    /* color: rgb(0, 255, 0); */
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 18vw);
+    grid-template-rows: repeat(3, 18vw);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .game-information .info {
+    font-size: 1.5rem;
+  }
+  .game-information h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .game-information #reset {
+    font-size: 1.2rem;
+    justify-content: center;
+    /* width: 70%; */
+    margin: 13px auto;
+    padding: 0.5rem 2rem;
+  }
+  nav .right h3 {
+    font-size: 1.2rem;
+  }
+  nav .left ul li {
+    font-size: 1.5rem;
+  }
+}

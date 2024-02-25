@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.header {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+header h1 {
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+}
+
+header h1 span {
+  color: yellow;
+}
+header h1 .diff-color {
+  color: rgb(116, 227, 208);
+}
+
+.container {
+  margin: 10rem;
+  max-width: 700px;
+}
+
+.container h1 {
+  font-size: 3.5rem;
+}
+
+.container h1 span {
+  color: #019f55;
+  border-bottom: 4px solid #019f55;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #333;
+  border-radius: 0.5rem;
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.display img {
+  width: 40px;
+  cursor: pointer;
+
+  border-radius: 0.5rem;
+}
+
+.display img:hover {
+  width: 41px;
+  border: 2px solid #36dcaa;
+  transition: all 0.1s linear;
+}
+
+.display input {
+  border: 0;
+  font-size: 1.7rem;
+  outline: 0;
+  width: 200%;
+}
+
+.btn {
+  font-size: 2rem;
+  color: white;
+  background-color: #019f55;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  border: 1px solid #019f55;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.btn:hover {
+  font-size: 2rem;
+  background-color: white;
+  color: #019f55;
+  transition: all 0.4s linear;
+}
+
+/* CSS Media Query at 600px maximum */
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 5rem;
+  }
+  .btn {
+    font-size: 1.4rem;
+  }
+  .header {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  .header nav .toggle-btn {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 1rem 0.5rem;
+
+    background-color: white;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    margin: 5rem 2rem;
+  }
+}
+
+body {
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode {
+  background-color: #ffffff;
+  color: #fff;
+}
+
+.toggle-btn {
+  cursor: pointer;
+  font-size: 20px;
+}

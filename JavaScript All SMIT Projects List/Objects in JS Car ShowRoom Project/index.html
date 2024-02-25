@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars ShowRoom JS Objects</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="custom_css.css" />
+
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="left">
+
+          <img src="image-processing20210817-11522-unscreen.gif" width="106rem" alt="">
+          <a class="navbar-brand">Owais Car Lounge</a>
+        </div>
+        
+        <div class="d-flex" role="search">
+          <select onchange="SetModel()" class="form-select m-2  gap-2" aria-label="Default select example" id="brand">
+            
+          </select>
+          <select class="form-select m-2 gap-2" aria-label="Default select example" id="model">
+            
+          </select>
+          <button onclick="SearchCar()" class="btn btn-outline-success bg-success m-2" type="submit">Search</button>
+          <button class="btn btn-outline-danger bg-danger m-2" id="clear" type="submit">Clear</button>
+        </div>
+    </nav>
+
+    <div class="container d-flex justify-content-center">
+
+      
+      <div class="row py-3" id="main">
+          
+      </div>
+      <div class="row py-3 d-flex justify-content-center">
+          
+        <div class="card " style="width: 100%; display: none;" id="car">
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </body>
+  <script src="script.js"></script>
+</html>

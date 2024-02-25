@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@700&family=Noto+Sans+Arabic:wght@700&family=Yantramanav:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  background-image: url(Assets/background-img.jpg);
+  /* height: 72rem; */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-clip: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container h1 {
+  border: 1px solid rgb(255, 255, 255);
+  margin: 2rem 0;
+  font-size: 3rem;
+  background-color: rgb(59, 235, 73);
+  padding: 1rem;
+  color: rgb(12, 12, 12);
+  text-align: center;
+  border-radius: 2rem;
+  font-family: "Yantramanav", sans-serif;
+}
+
+.container .arabic {
+  border: 1px solid rgb(243, 241, 241);
+  text-align: center;
+
+  font-family: "Noto Sans Arabic", sans-serif;
+  padding: 1.5rem 1rem;
+  font-size: 2rem;
+  font-weight: 900;
+  background-color: rgb(5, 10, 5);
+  opacity: 0.7;
+  border-radius: 4rem;
+}
+
+.container span {
+  border-top: 4px solid rgb(255, 255, 255);
+  font-size: 1.7rem;
+  padding: 1rem 2rem;
+  /* padding: 0 12rem; */
+  background-color: rgb(0, 0, 0);
+  border-radius: 4rem;
+  display: block;
+}
+
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+  gap: 7rem;
+  margin: 3rem 0rem;
+}
+
+.box {
+  background-color: rgb(79, 226, 77);
+  opacity: 0.9;
+  height: 15rem;
+  width: 10%;
+  font-size: 3rem;
+  font-weight: 900;
+  color: black;
+  font-family: "Yantramanav", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-basis: 13rem;
+  border-radius: 1.4rem;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 1rem;
+  font-family: "Yantramanav", sans-serif;
+}
+
+h1 button {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: "Yantramanav", sans-serif;
+  opacity: 0.8;
+}
+
+/* Media Query for tablet Pc & Ipads */
+
+@media screen and (max-width: 960px) {
+  .container h1 {
+    font-size: 2.7rem;
+    font-weight: 900;
+  }
+
+  .container .arabic {
+    font-size: 1.6rem;
+    padding: 1.5rem;
+  }
+
+  .container span {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    /* padding: 0 12rem; */
+    background-color: rgb(0, 0, 0);
+    border-radius: 4rem;
+    display: block;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h1 button {
+    border: 2px solid rgb(0, 0, 0);
+    margin: 2rem;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 900;
+    opacity: 0.8;
+  }
+  .countdown {
+    flex-wrap: wrap;
+    /* margin: 5rem; */
+  }
+  .countdown .box {
+    font-size: 2.5rem;
+    font-family: "Yantramanav", sans-serif;
+  }
+}
+
+/* Media Query for Mobile Phone*/
+
+@media screen and (max-width: 500px) {
+  .container h1 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  .container .arabic {
+    font-size: 1.4rem;
+    padding: 2rem;
+  }
+
+  .container span {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h1 button {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+  }
+  .countdown .box {
+    margin: 0rem;
+  }
+  .countdown .box {
+    font-size: 2.5rem;
+
+    background-color: rgb(79, 226, 77);
+    opacity: 0.9;
+    height: 15rem;
+    width: 90%;
+    font-size: 2.5rem;
+  }
+  .countdown {
+    gap: 3rem;
+  }
+}
