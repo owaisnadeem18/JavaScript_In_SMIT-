@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: rgb(31, 32, 32);
+  color: white;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  opacity: 0;
+  transition: 0.5s;
+  /* z-index: 15; */
+}
+
+.box {
+  font-family: "Montserrat", sans-serif;
+
+  height: 50vh;
+  min-width: 600px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 1rem;
+  /* opacity: 0.6; */
+}
+
+.container .box .error-img img {
+  width: 4rem;
+}
+
+.container .box h2 {
+  text-align: center;
+}
+
+.container .box button {
+  padding: 0.4rem 2rem;
+  background-color: rgb(86, 26, 227);
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+/* Button Parent Div Classes and content */
+
+.btn-parent {
+  height: 100vh;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-parent button {
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: rgb(59, 59, 232);
+  font-size: 1.5rem;
+  border: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
+  /* z-index: 10; */
+  position: absolute;
+}
